@@ -18,10 +18,14 @@ angular.module('starter.controllers', [])
   $scope.$on('$ionicView.loaded', function(e) {
     $ionicNavBarDelegate.title('The list of topics');
   });
-
-
-  $scope.chats = Chats.all();
 })
+
+.controller('RequiredInformation2Ctrl', function($scope, $stateParams, Chats, $ionicNavBarDelegate) {
+  //$scope.chat = Chats.get($stateParams.chatId);
+  $ionicNavBarDelegate.title('Required Information2');
+})
+
+
 .controller('RequiredInformationCtrl', function($scope, $stateParams, Chats, $ionicNavBarDelegate) {
   //$scope.chat = Chats.get($stateParams.chatId);
   $ionicNavBarDelegate.title('Required Information');

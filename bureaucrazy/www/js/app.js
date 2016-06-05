@@ -73,6 +73,28 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  // step 4: required-information
+  .state('step.4-required-information', {
+    url: '/4-required-information',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/4-required-information.html',
+        controller: 'RequiredInformationCtrl'
+      }
+    }
+  })  
+
+  // step 5: required-information
+  .state('step.5-required-information', {
+    url: '/5-required-information',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/5-required-information.html',
+        controller: 'RequiredInformation2Ctrl'
+      }
+    }
+  })  
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/step/1-welcome');
 
