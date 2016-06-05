@@ -95,6 +95,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })  
 
+  .state('step.6-yes-required-information', {
+    url: '/6-yes-required-information',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/6-yes-required-information.html',
+        controller: 'RequiredInformation3Ctrl'
+      }
+    }
+  }) 
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/step/1-welcome');
 
