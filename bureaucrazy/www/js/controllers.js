@@ -35,3 +35,9 @@ angular.module('starter.controllers', [])
   $ionicNavBarDelegate.title('Required Information3');
   $scope.progressPercent = 60;
 })
+
+.controller('RequiredInformation4Ctrl', function($scope, $stateParams, Chats, $ionicNavBarDelegate) {
+  //$scope.chat = Chats.get($stateParams.chatId);
+  $ionicNavBarDelegate.title('Required Information4');
+  $scope.progressPercent = 90;
+})

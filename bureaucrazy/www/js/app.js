@@ -103,6 +103,15 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         controller: 'RequiredInformation3Ctrl'
       }
     }
+  })
+  .state('step.7-yes-required-information', {
+    url: '/7-yes-required-information',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/7-yes-required-information.html',
+        controller: 'RequiredInformation4Ctrl'
+      }
+    }
   }) 
 
   // if none of the above states are matched, use this as the fallback
