@@ -1,3 +1,46 @@
+
+// centering headline
+.ci-h2--center{
+	text-align: center;
+}
+
+
+// css of slider
+.slider {
+  height: 80%;
+}
+.slider-slide {
+  color: #000;
+  background-color: #fff;
+  text-align: center;
+
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 300;
+}
+
+#logo {
+  margin: 30px 0px;
+}
+
+#list {
+  width: 170px;
+  margin: 30px auto;
+  font-size: 20px;
+}
+#list ol {
+  margin-top: 30px;
+}
+#list ol li {
+  text-align: left;
+  list-style: decimal;
+  margin: 10px 0px;
+}
+
+.button.ng-hide{
+  display:none;
+}
+
+
 // fix for centering logo
 .ci-logo{
   position: relative;
@@ -9,3 +52,8 @@
   border: none;
   text-align: center;
  }
+
+// button with border
+.button-stable--border{
+  border: 1px solid #666 !important;
+}

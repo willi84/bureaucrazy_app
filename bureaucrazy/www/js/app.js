@@ -33,10 +33,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
 
   // setup an abstract state for the tabs directive
     .state('step', {
-    url: '/step',
-    abstract: true,
-    templateUrl: 'templates/menu.html'
-  })
+      url: '/step',
+      abstract: true,
+      templateUrl: 'templates/menu.html'
+    })
 
   // Each tab has its own nav history stack:
 
@@ -47,6 +47,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       'menuContent': {
         templateUrl: 'templates/1-welcome.html',
         controller: 'WelcomeCtrl'
+      }
+    }
+  })
+
+  // step 2: onboarding
+  .state('step.2-onboarding', {
+    url: '/2-onboarding',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/2-onboarding.html',
+        controller: 'OnBoardingCtrl'
       }
     }
   })

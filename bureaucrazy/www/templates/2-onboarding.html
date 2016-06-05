@@ -1,0 +1,59 @@
+<ion-view hide-nav-bar="true">
+  <ion-content class="padding">
+    <h2 class="ci-h2--center">Our App</h2>
+        <ion-nav-buttons side="left">
+          <button class="button button-positive button-clear no-animation"
+                  ng-click="starXX" ng-show="!slideIndex">
+            Skip Intro
+          </button>
+          <button class="button button-positive button-clear no-animation"
+                  ng-click="previous()" ng-show="slideIndex > 0">
+            Previous Slide
+          </button>
+        </ion-nav-buttons>
+        <ion-nav-buttons side="right"> 
+          <button class="button button-positive button-clear no-animation"
+                  ng-click="next()" ng-show="slideIndex != 2">
+            Next
+          </button>
+          <button class="button button-positive button-clear no-animation"
+                  ng-click="startApp()" ng-show="slideIndex == 2">
+            Start using MyApp
+          </button>
+        </ion-nav-buttons>
+        <ion-slide-box on-slide-changed="slideChanged(index)">
+          <ion-slide>
+            <div id="logo">
+              <img src="/img/welcome.png">
+            </div>
+            <h4>
+              Easy to use for everyone
+            </h4>
+          </ion-slide>
+          <ion-slide>
+            <h3>Using Awesome</h3>
+            
+            <div id="list">
+              <h5>Just three steps:</h5>
+              <ol>
+                <li>Be awesome</li>
+                <li>Stay awesome</li>
+                <li>There is no step 3</li>
+              </ol>
+            </div>
+          </ion-slide>
+          <ion-slide>
+            <h3>Any questions?</h3>
+            <p>
+              Too bad!
+            </p>
+          </ion-slide>
+        </ion-slide-box>
+
+
+    
+    <a href="/#/step/3-topics" class="button button-full button-positive">Go to Application</a>
+  
+</button>
+  </ion-content>
+</ion-view>
