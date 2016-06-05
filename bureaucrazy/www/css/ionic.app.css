@@ -9857,3 +9857,10 @@ a.button {
 
 .button-stable--border {
   border: 1px solid #666 !important; }
+
+.loader {
+  background: #666 !important;
+  border-radius: 50px; }
+  .loader p {
+    text-align: center;
+    color: white !important; }

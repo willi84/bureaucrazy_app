@@ -5,16 +5,28 @@
     <div class="loader" style="width: {{progressPercent}}%;">
       <p>{{progressPercent}}%</p>
     </div>
-    <div class="row responsive-md">
-      <div class="col col-25"></div>
-      <div class="col col-50">
-        <p>Do you already have anmeldung?</p>
-        <p>Having a abmeldung if required to get the bank account. Top on no if you have not it.</p>
-        <p>We will creat it together.</p>
-        <a href="/#/step/6-yes-required-information" class="button button-full button-stable button-stable--border">Yes, I have Anmeldung</a>
-        <a href="/#/step/6-no-required-information" class="button button-full button-stable button-stable--border">No, I haven't Anmeldung</a>
-      </div>
-      <div class="col col-25"></div>
-    </div
+    <div class="list">
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">First Name</span>
+    <input type="text" placeholder="John">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Second Name</span>
+    <input type="text" placeholder="Doe">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Current Address(street, number, floor)</span>
+    <input type="text" placeholder="text">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Previous Address(postal code, country, city)</span>
+    <input type="text" placeholder="text">
+  </label>
+  <label class="item item-input item-stacked-label">
+    <span class="input-label">Previous Address(street, number, floor)</span>
+    <input type="text" placeholder="text">
+  </label>
+</div>
+<a href="/#/step/7-required-information" class="button button-full  button-stable button-stable--border">Next</a>
   </ion-content>
 </ion-view>

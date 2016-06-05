@@ -57,3 +57,13 @@
 .button-stable--border{
   border: 1px solid #666 !important;
 }
+
+// loader design
+.loader{
+  background: #666 !important;
+  border-radius:50px;
+  p{
+    text-align:center;
+    color:white !important;
+  }
+}
