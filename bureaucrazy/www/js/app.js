@@ -62,6 +62,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
+  // step 3: topics
+  .state('step.3-topics', {
+    url: '/3-topics',
+    views: {
+      'menuContent': {
+        templateUrl: 'templates/3-topics.html',
+        controller: 'TopicsCtrl'
+      }
+    }
+  })
+
   // if none of the above states are matched, use this as the fallback
   $urlRouterProvider.otherwise('/step/1-welcome');
 

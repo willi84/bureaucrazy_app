@@ -4,7 +4,7 @@ angular.module('starter.controllers', [])
 })
 
 .controller('OnBoardingCtrl', function($scope) {
-});
+})
 
 .controller('TopicsCtrl', function($scope, Chats, $ionicNavBarDelegate) {
   //$ionicNavBarDelegate.showBackButton([true]);
@@ -21,4 +21,8 @@ angular.module('starter.controllers', [])
 
 
   $scope.chats = Chats.all();
+})
+.controller('RequiredInformationCtrl', function($scope, $stateParams, Chats, $ionicNavBarDelegate) {
+  //$scope.chat = Chats.get($stateParams.chatId);
+  $ionicNavBarDelegate.title('Required Information');
 })
