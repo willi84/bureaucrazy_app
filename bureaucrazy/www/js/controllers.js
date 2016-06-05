@@ -41,3 +41,26 @@ angular.module('starter.controllers', [])
   $ionicNavBarDelegate.title('Required Information4');
   $scope.progressPercent = 90;
 })
+
+.controller('RequiredInformation5Ctrl', function($scope, $stateParams, Chats, $ionicNavBarDelegate, $ionicModal) {
+  //$scope.chat = Chats.get($stateParams.chatId);
+  $ionicNavBarDelegate.title('Required Information4');
+  
+// Create the login modal that we will use later
+  $ionicModal.fromTemplateUrl('templates/9-save-information.html', {
+    scope: $scope
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+
+  // Triggered in the login modal to close it
+  $scope.closeLogin = function() {
+    $scope.modal.hide();
+  };
+
+  // Open the login modal
+  $scope.login = function() {
+    $scope.modal.show();
+  };
+
+})

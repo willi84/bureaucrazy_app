@@ -67,3 +67,26 @@
     color:white !important;
   }
 }
+.thumbsup{
+  font-size: 80px;
+}
+
+.ci-modal{
+  width: 80%;
+  left: 10%;
+  top:20%;
+  bottom: 20%;
+  height: 30%;
+  overflow: hidden;
+  border: 1px solid #999;
+    opacity: 1;
+}
+.adic-modal .modal {
+    min-height: 0 !important;
+}
+body.modal-open .modal-backdrop.active{
+background: rgba(0,0,0,0.7);
+ .ci-modal{
+  background-color: white;
+ }
+}
