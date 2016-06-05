@@ -1,0 +1,11 @@
+// fix for centering logo
+.ci-logo{
+  position: relative;
+  left: -10%;
+}
+
+// fix for no bordered list-items
+.list.list--noborder > .item{
+  border: none;
+  text-align: center;
+ }

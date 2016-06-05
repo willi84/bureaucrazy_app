@@ -9814,3 +9814,11 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+.ci-logo {
+  position: relative;
+  left: -10%; }
+
+.list.list--noborder > .item {
+  border: none;
+  text-align: center; }
